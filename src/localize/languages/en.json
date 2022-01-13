@@ -40,6 +40,7 @@
     "hide_connect_devices": "Hide all Spotify Connect Devices",
     "hide_chromecast_devices": "Hide all Chromecast Devices",
     "hide_top_header": "Hide header",
+    "hide_footer": "Hide footer",
     "hide_currently_playing": "Hide currently playing",
     "hide_playback_controls": "Hide playback controls"
   }

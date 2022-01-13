@@ -231,6 +231,8 @@ export class SpotifyCardEditor extends LitElement implements LovelaceCardEditor 
         return this.config?.hide_chromecast_devices ?? false;
       case ConfigEntry.Hide_Top_Header:
         return this.config?.hide_top_header ?? false;
+      case ConfigEntry.Hide_Footer:
+        return this.config?.hide_footer ?? false;
       case ConfigEntry.Hide_Currently_Playing:
         return this.config?.hide_currently_playing ?? false;
       case ConfigEntry.Hide_Playback_Controls:
@@ -345,6 +347,14 @@ export class SpotifyCardEditor extends LitElement implements LovelaceCardEditor 
               .configValue=${'hide_top_header'}
               @change=${this.valueChanged}
               .id=${'hide_top_header'}
+            ></ha-switch>
+          </ha-formfield>
+          <ha-formfield label=${localize('settings.hide_footer')}>
+            <ha-switch
+              .checked=${this.getValue(ConfigEntry.Hide_Footer)}
+              .configValue=${'hide_footer'}
+              @change=${this.valueChanged}
+              .id=${'hide_footer'}
             ></ha-switch>
           </ha-formfield>
         </div>

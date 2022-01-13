@@ -511,6 +511,7 @@ export class SpotifyCard extends LitElement {
             </div>`
           : null}
         <div id="content" class="${this.hasFilteredDevices() ? '' : 'grey-scale'}">${content}</div>
+        ${!this.config.hide_footer ? html`
         <div id="footer">
           <div class="dropdown-wrapper">
             <div class="controls">
@@ -608,7 +609,8 @@ export class SpotifyCard extends LitElement {
                 </div>`
               : null}
           </div>
-        </div>
+        </div>`
+        : null}
       </ha-card>
     `;
   }

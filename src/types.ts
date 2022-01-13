@@ -33,6 +33,7 @@ export enum ConfigEntry {
   Hide_Connect_Devices,
   Hide_Chromecast_Devices,
   Hide_Top_Header,
+  Hide_Footer,
   Hide_Currently_Playing,
   Hide_Playback_Controls,
 }
@@ -78,6 +79,8 @@ export interface SpotifyCardConfig extends LovelaceCardConfig {
   hide_chromecast_devices?: boolean;
   //hide the top header row and display the spotify icon at the bottom
   hide_top_header?: boolean;
+  //hide the footer
+  hide_footer?: boolean;
   //hide the currently playing row
   hide_currently_playing?: boolean;
   //hide the playback controls

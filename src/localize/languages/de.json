@@ -30,6 +30,7 @@
     "hide_connect_devices": "Verstecke alle Spotify Connect Geräte",
     "hide_chromecast_devices": "Verstecke alle Chromecast Geräte",
     "hide_top_header": "Verstecke Kopfzeile",
+    "hide_footer": "Verstecke Fußzeile",
     "hide_currently_playing": "Verstecke die Anzeige des aktuellen Liedes",
     "hide_playback_controls": "Verstecke Wiedergabesteuerung"
   }
